@@ -7,8 +7,10 @@
    let el_sell = document.querySelector("#sell");
    let pers = 0.00237999;
    let perb = 0.001469888;
-   el_buy.innerHTML = value*perb;
-   el_sell.innerHTML = value*pers;
+   let b = Math.round(value*perb);
+   let s = Math.round(value*pers);
+   el_buy.innerHTML = `${b}đ - thực mua: ${value-b}đ`;
+   el_sell.innerHTML = `${s}đ - thực nhận: ${value-s}đ`;
  }
   
 </script>
