@@ -1,0 +1,17 @@
+<script>
+ function processHandle(e){
+   let value = e.target.value;
+   let el_buy = document.querySelector("#buy");
+   let el_buy = document.querySelector("#sell");
+   let pers = 0.0025;
+   let perb = 0.00147;
+   el_buy.innerHTML = value*perb;
+   el_sell.innerHTML = value*pers;
+ }
+  
+</script>
+
+
+<input onchange="processHandle(event)" />
+<div>Phí mua: <b id="buy"></b></div>
+<div>Phí bán: <b id="sell"></b></div>
