@@ -9,8 +9,8 @@
    let perb = 0.001469888;
    let b = Math.round(value*perb);
    let s = Math.round(value*pers);
-   el_buy.innerHTML = `${b}đ - thực mua: ${value-b}đ`;
-   el_sell.innerHTML = `${s}đ - thực nhận: ${value-s}đ`;
+   el_buy.innerHTML = `${b.toFixed(0)}đ - thực mua: ${(value+b).toFixed(0)}đ`;
+   el_sell.innerHTML = `${s.toFixed(0)}đ - thực nhận: ${(value-s).toFixed(0)}đ`;
  }
   
 </script>
